@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{%block title%}Polestar{%endblock title%}
+{%block body%}
+
+<body>
+<h1 class="project-title">Polestar: Battery Electric VTOL</h1>
+<div class="swiper"> 
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="static/images/project3.jpg" atl="slide-1">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_1.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_2.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_3.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_4.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_5.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_6.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_7.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/pro3card_8.jpg" atl="slide-3">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+    //swiper
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    initialSlide: 0,
+    speed: 600,
+    preventClicks: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+    },
+    on:{
+        click(event){
+            swiper.slideTo(this.clickedIndex);
+        },
+    },
+    loop:true,
+    pagination:{
+        el: ".swiper-pagination",
+    },
+})
+</script>
+
+</body>
+{%endblock body%}

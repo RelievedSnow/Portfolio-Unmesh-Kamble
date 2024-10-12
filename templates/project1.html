@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{%block title%}Volvo AERO{%endblock title%}
+{%block body%}
+
+<body>
+<h1 class="project-title">Volvo AERO: Air Efficient Road Operations</h1>
+<div class="swiper"> 
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="static/images/card_1.jpg" atl="slide-1">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_2.jpg" atl="slide-2">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_3.jpg" atl="slide-3">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_4.jpg" atl="slide-4">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_5.jpg" atl="slide-5">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_6.jpg" atl="slide-6">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_7.jpg" atl="slide-7">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/carousel_3.jpg" atl="slide-8">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_8.jpg" atl="slide-8">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_9.jpg" atl="slide-9">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/caraousel_1.png" atl="slide-10">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_10.jpg" atl="slide-10">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_11.jpg" atl="slide-11">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_12.jpg" atl="slide-12">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/carousel_2.jpg" atl="slide-13">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_13.jpg" atl="slide-13">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_14.jpg" atl="slide-14">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_15.jpg" atl="slide-15">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/project1.jpg" atl="slide-1">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_16.jpg" atl="slide-16">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_17.jpg" atl="slide-17">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_18.jpg" atl="slide-18">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_19.jpg" atl="slide-19">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_20.jpg" atl="slide-20">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_21.jpg" atl="slide-21">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_22.jpg" atl="slide-22">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_23.jpg" atl="slide-23">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_24.jpg" atl="slide-24">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_25.jpg" atl="slide-25">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_26.jpg" atl="slide-26">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_27.jpg" atl="slide-27">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_28.jpg" atl="slide-28">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_29.jpg" atl="slide-29">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_30.jpg" atl="slide-30">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_31.jpg" atl="slide-31">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_32.jpg" atl="slide-32">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_33.jpg" atl="slide-33">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_34.jpg" atl="slide-34">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_35.jpg" atl="slide-35">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_36.jpg" atl="slide-36">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_37.jpg" atl="slide-37">
+      </div>
+      <div class="swiper-slide">
+        <img src="static/images/card_38.jpg" atl="slide-38">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script>
+    //swiper
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    initialSlide: 0,
+    speed: 600,
+    preventClicks: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 350,
+        modifier: 1,
+        slideShadows: true,
+    },
+    on:{
+        click(event){
+            swiper.slideTo(this.clickedIndex);
+        },
+    },
+    loop:true,
+    pagination:{
+        el: ".swiper-pagination",
+    },
+})
+</script>
+
+</body>
+{%endblock body%}

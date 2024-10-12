@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock title%} | Unmesh Kamble</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+</head>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">Portfolio</a>
+        </div>
+        <ul class="links">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/#about-me-section">ABOUT</a></li>
+            <li><a href="/#footer-section">CONTACT</a></li>
+            <li><a href="/gallery">GALLERY</a></li>
+        </ul>
+        <div class="toggle-btn">
+            <i class="bi bi-list"></i>
+        </div>
+    </div>
+    
+    <div class="dropdown-menu">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/#about-me-section">ABOUT</a></li>
+        <li><a href="/#footer-section">CONTACT</a></li>
+        <li><a href="/gallery">GALLERY</a></li>
+    </div>
+</header>
+
+{%block body%}
+{% endblock body %}
+
+
+<footer id="footer-section">
+    <div class="footer">
+        <div class="foot-column-1">
+            <h3>Feedback</h3>
+            <form method="POST" action="/">
+                {% csrf_token %}
+                <div class="feedback">
+                    <input type="text" placeholder="Enter Your Email" name="email" id="email" required>
+                    <textarea rows="2" cols="38" name="review" placeholder="Write Your Review." required></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="foot-column-2">
+            <h3>About Me</h3>
+            <div class="foot-about-me">
+                <p class="contact">Contact: 91+ 7039077106</p>
+                <P class="address"> Navi Mumbai, Maharashtra, India.</P>
+                <P class="email">unmesh2905@gmail.com</P>
+            </div>
+        </div>
+        <div class="foot-column-3">
+            <h3>Follow On</h3>
+            <div class="social-media">
+                <a href="https://www.instagram.com/unmesh__kamble/" class="instagram" target="_blank"><img src="static/images/instagram.png"></a>
+                <a href="mailto:unmesh2905@gmail.com" class="gmail"><img src="static/images/gmail.png"></a>
+                <a href="https://www.linkedin.com/in/unmesh-kamble-46262217b/" class="linkedIn" target="_blank"><img src="static/images/linkedin.png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copyright-info">© 2024-2025 | Portfolio - Unmesh Kamble</p>
+    </div>
+</footer>
+
+<script src="{% static 'script.js' %}"></script>
+
+</html>
