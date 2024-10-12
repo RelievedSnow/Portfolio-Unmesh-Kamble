@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-@d*6*#7%v7qdfb4)%z8e%kjibus#l!dd37rgnk--w8ecm%_#qd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['portfolio-unmesh-kamble.onrender.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
